@@ -509,7 +509,7 @@ body {
 
 
 .r10 {
-    padding: 70px 0;
+    padding: 70px 100px;
 
     .txt1 {
         font-size: 60px;
@@ -664,20 +664,17 @@ body {
     }
 
     .hexa {
-        --w6: 250px;
-        --h6: 200px;
-        width: var(--w6);
-        height: var(--h6);
+        --w: 250px;
+        width: var(--w);
+        height: var(--w);
 
         background: url(/asset/image/greenhexa.png);
-
         background-size: contain;
-
+        background-position: center;
         background-repeat: no-repeat;
         display: inline-block;
         justify-content: center;
         align-items: center;
-        margin: 35px 0px;
 
         .p1 {
             display: flex;
@@ -740,7 +737,6 @@ body {
             --h6: 40px;
             width: var(--w6);
             height: var(--h6);
-
             background: url(/asset/image/hexagon.png);
             background-size: contain;
             background-repeat: no-repeat;
@@ -755,7 +751,77 @@ body {
 
 }
 
-.r13 {}
+.r13 {
+    background-color: #e5e7e9;
+    padding: 40px 90px;
+
+    .txt1 {
+        font-size: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .c3 {
+        /* margin: 60px 0px; */
+        text-align: center;
+
+        .txt3 {
+            margin: 18px 0px;
+        }
+    }
+
+    .line {
+        --w: 250px;
+        --h: 15px;
+        width: var(--w);
+        height: var(--h);
+        background-color: red;
+        margin: auto;
+
+        .line_2 {
+            width: 50%;
+            height: 100%;
+            background-color: #000000cd;
+        }
+    }
+
+    .c5 {
+        font-size: 20px;
+    }
+
+    .c5 {
+        input {
+            width: 500px;
+            height: 70px;
+            margin: 15px;
+            outline: none;
+
+        }
+    }
+
+    .c6 {
+        font-size: 20px;
+
+        input {
+            text-transform: uppercase;
+            width: 100%;
+            height: 270px;
+            margin: 12px;
+
+        }
+    }
+
+    .btn {
+        background-color: var(--color1);
+        text-transform: uppercase;
+        color: var(--color2);
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+
+}
 
 .menuBtn {
     display: none;
@@ -768,10 +834,97 @@ body {
     opacity: 1;
 }
 
+.r14 {
+
+    padding: 50px 0;
+
+    .hexa {
+        --w: 120px;
+        width: var(--w);
+        height: var(--w);
+        background: url(/asset/image/hexagon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin-right: 10px;
+    }
+
+
+
+
+
+    .c7 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .bg {
+        color: var(--color1);
+    }
+
+    .txt2 {
+        font-size: 18px;
+        font-weight: 700;
+        justify-content: center;
+        color: #3c3c3cde;
+
+        .txt3 {
+            text-transform: uppercase;
+
+            span {
+                color: var(--color1);
+
+            }
+        }
+    }
+
+
+
+
+
+}
+
+.r15 {
+    background-color: var(--color1);
+    padding: 30px 0px;
+    color: var(--color2);
+    text-align: center;
+
+    .txt1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 700;
+
+
+    }
+
+    .txt2 {
+        text-transform: capitalize;
+        font-size: 25px;
+
+        span {
+            font-weight: 700;
+
+        }
+    }
+}
+
 
 @media (max-width:720px) {
 
 
+    .r14 {
+        .hexa {
+            --w: 80px;
+            font-size: 32px;
+        }
+    }
 
     .menuBtn {
         display: block;
@@ -880,7 +1033,7 @@ body {
     }
 
     .r10 {
-
+        padding: 10px;
 
         .img1 {
             background-position: center;
@@ -937,4 +1090,71 @@ body {
 
 
     }
+
+    .c3 {
+        .txt1 {
+            font-size: 30px;
+        }
+
+        .line {
+            margin-top: 12px;
+            width: 35%;
+            height: 10px;
+        }
+
+        .txt3 {
+            font-size: 15px;
+        }
+    }
+
+
+
+    .r13 {
+        padding: 35px 23px;
+
+        .btn {
+            padding: 12px 0px;
+            font-size: 18px;
+            margin: 16px;
+
+        }
+
+        .c5 {
+            input {
+                width: 300px;
+                height: 50px;
+                padding: 12px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+
+
+
+    }
+
+    .r15 {
+        .txt1 {
+            font-size: 40px;
+        }
+
+        .txt2 {
+            font-size: 20px;
+        }
+    }
+
+    .r13 {
+        .c6 {
+            input {
+                margin: 0px 14px;
+                width: 75%;
+                height: 250px;
+                font-weight: 700;
+            }
+        }
+    }
+
+
+
 }
